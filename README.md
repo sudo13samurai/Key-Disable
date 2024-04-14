@@ -4,7 +4,7 @@ This script checks if an external keyboard is connected and detaches the interna
 Usage
 Copy
 
-./key-disable.sh
+./keydisable.sh
 
 Requirements
 
@@ -15,7 +15,7 @@ Setup
 Make sure the script is executable:
 Copy
 
-chmod +x key-disable.sh
+chmod +x keydisable.sh
 
 Troubleshooting
 
