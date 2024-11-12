@@ -17,14 +17,11 @@ Create a new file called disable_internal_keyboard.sh
 Insert the following into the file and save:
 
 #!/bin/bash
-
-# Get the ID of the internal keyboard
+##Get the ID of the internal keyboard
 keyboard_id=$(xinput list | grep -Ei "Internal keyboard" | grep -Eo "id=[0-10]+" | cut -d= -f2)
-
-# Disable the internal keyboard
+##Disable the internal keyboard
 xinput disable "$keyboard_id"
-
-# Print a message to the user
+##Print a message to the user
 echo "Internal keyboard disabled."
 
 Make sure the script is executable:
